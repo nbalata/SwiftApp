@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,15 +27,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lF2-Z2-77M">
+                                <rect key="frame" x="157.5" y="140.5" width="60" height="30"/>
+                                <state key="normal" title="Push Me"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yC5-JQ-p8r"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="lF2-Z2-77M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Us2-Qq-odw"/>
                             <constraint firstItem="P5H-57-YlM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WYv-Sg-OqJ"/>
+                            <constraint firstItem="lF2-Z2-77M" firstAttribute="top" secondItem="P5H-57-YlM" secondAttribute="bottom" constant="50" id="jRn-OR-PyV"/>
                             <constraint firstItem="P5H-57-YlM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="yUC-cX-mPS"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="coolLabel" destination="8bC-Xf-vdC" id="GdG-z5-w3S"/>
+                        <outlet property="coolLabel" destination="P5H-57-YlM" id="d3D-m9-Ggl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
